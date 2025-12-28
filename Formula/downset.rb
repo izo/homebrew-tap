@@ -1,17 +1,17 @@
 class Downset < Formula
   desc "Convert documents to Markdown - CLI for MarkItSwift"
   homepage "https://github.com/izo/downset-app"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/izo/downset-app/releases/download/v#{version}/downset-#{version}-arm64.tar.gz"
-      sha256 "7c4f3af42e06627b181e12e0b90bfe9774926a4f04d158667a2402e66fe8693e"
+      sha256 "befc994c2096401d51cde17fe38dacd09011435b15e01b95052ba60da45c3704"
     end
     on_intel do
       url "https://github.com/izo/downset-app/releases/download/v#{version}/downset-#{version}-x86_64.tar.gz"
-      sha256 "9d07cac93edf707836f4ef30a9c5b137c80b68d22498a2452dadf97e4018aba5"
+      sha256 "82f42dcb85dbed2fc42d3d25a3eb66c0b53c9c12c005dbb24e820c58f653bd48"
     end
   end
 
