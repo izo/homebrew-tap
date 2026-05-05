@@ -5,21 +5,21 @@
 class Ulk < Formula
   desc "ulk — AI-assisted development toolkit (85 agents for Claude Code)"
   homepage "https://ulk.regrets.app"
-  version "5.0.4"
+  version "5.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/izo/Ulk/releases/download/v5.0.4/ulk_darwin_amd64.tar.gz"
-      sha256 "ebd98eca9d948a8bf8e04b276b6df62d0143f09cd9bfc9dc2e6b7a25298c3918"
+      url "https://github.com/izo/Ulk/releases/download/v5.0.5/ulk_darwin_amd64.tar.gz"
+      sha256 "8091841337a83d3b562c84208e81c8457413e52da838ea75aec431c374b2a66b"
 
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/izo/Ulk/releases/download/v5.0.4/ulk_darwin_arm64.tar.gz"
-      sha256 "c10bab72bb2e0e045f7ad02dfa55ac6c80ed74aa4ba53ca8a37bdd0bffc15134"
+      url "https://github.com/izo/Ulk/releases/download/v5.0.5/ulk_darwin_arm64.tar.gz"
+      sha256 "f9c97b8cbdb894c5d9ebfb48ddaad799e0359a60d658d0c8da684c02996ce6b2"
 
       define_method(:install) do
         bin.install "ulk"
@@ -29,15 +29,15 @@ class Ulk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izo/Ulk/releases/download/v5.0.4/ulk_linux_amd64.tar.gz"
-      sha256 "fafabb1734ccc9c7e93433afc60f83619afd7d473470e9fd01905dc7f6b64e5f"
+      url "https://github.com/izo/Ulk/releases/download/v5.0.5/ulk_linux_amd64.tar.gz"
+      sha256 "86aac3e08e99d3b672dd29cb6a68301860b24b8c89103cc02c7dd9e3e9b6db7f"
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izo/Ulk/releases/download/v5.0.4/ulk_linux_arm64.tar.gz"
-      sha256 "32520251696fe8dbf2b9a79b8cf30fb1380b255855ea8b661ccd7a67ef5aef60"
+      url "https://github.com/izo/Ulk/releases/download/v5.0.5/ulk_linux_arm64.tar.gz"
+      sha256 "1d759856c322e43e09da2eb33f9620f5a6f8a1e0ad6c1c9db4b384e0261443a4"
       define_method(:install) do
         bin.install "ulk"
       end
