@@ -5,21 +5,21 @@
 class Ulk < Formula
   desc "ulk — AI-assisted development toolkit (77 agents for Claude Code)"
   homepage "https://github.com/izo/Ulk"
-  version "7.2.0"
+  version "7.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://releases.regrets.app/v7.2.0/ulk_darwin_amd64.tar.gz"
-      sha256 "9bfc472fdc1af6b27d5f1539ee0da16a56f5d1c5226908308aaa52426c350ef3"
+      url "https://releases.regrets.app/v7.3.0/ulk_darwin_amd64.tar.gz"
+      sha256 "949e63cad440e6593ebba5748032f702a05fbd6238b3c31e6954ce27a5f0e81a"
 
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://releases.regrets.app/v7.2.0/ulk_darwin_arm64.tar.gz"
-      sha256 "993e41046376ddb94156b75cb94ad7269fade650ef227a8fbb776573e6aba60d"
+      url "https://releases.regrets.app/v7.3.0/ulk_darwin_arm64.tar.gz"
+      sha256 "02db2918b598be131000a011c1252cd3ecd7925a94e7b127a1bd2ec91f2d90bf"
 
       define_method(:install) do
         bin.install "ulk"
@@ -29,15 +29,15 @@ class Ulk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://releases.regrets.app/v7.2.0/ulk_linux_amd64.tar.gz"
-      sha256 "0529cfa827d8b7ce1345997ca50221223f26b35fa637db451dec064fec959373"
+      url "https://releases.regrets.app/v7.3.0/ulk_linux_amd64.tar.gz"
+      sha256 "63a9eba72041f2e712b607f0866e74a521f6df4ee47c62e6b304f5ea80c59555"
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://releases.regrets.app/v7.2.0/ulk_linux_arm64.tar.gz"
-      sha256 "28bf91151110f040eb9bd21ed261300131c54dbb2c06175c48cc777ba6bfaec5"
+      url "https://releases.regrets.app/v7.3.0/ulk_linux_arm64.tar.gz"
+      sha256 "9a74dc6a15911544872721dfd89d0e92fde646205c9e1cd8cbb62f870d047998"
       define_method(:install) do
         bin.install "ulk"
       end
