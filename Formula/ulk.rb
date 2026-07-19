@@ -10,7 +10,7 @@ class Ulk < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://releases.regrets.app/v7.6.0/ulk_darwin_amd64.tar.gz"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.6.0/ulk_darwin_amd64.tar.gz"
       sha256 "cb364a71f4fbef6caa28b727ef6965e532e356b6524d40ec2764d11423a09c8a"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class Ulk < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://releases.regrets.app/v7.6.0/ulk_darwin_arm64.tar.gz"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.6.0/ulk_darwin_arm64.tar.gz"
       sha256 "95debb36d771f90f9af6b422e13f84d91753162246df02d2683a0a762c339e4a"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class Ulk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://releases.regrets.app/v7.6.0/ulk_linux_amd64.tar.gz"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.6.0/ulk_linux_amd64.tar.gz"
       sha256 "ac9ca28c1d5a5e3a6feb8010702759af59dde5f329f3dfd586319ae3eb32e6cc"
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://releases.regrets.app/v7.6.0/ulk_linux_arm64.tar.gz"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.6.0/ulk_linux_arm64.tar.gz"
       sha256 "eb62891d0892b591239a90439e6af1054826eafe8981d256039969547b9995fe"
       define_method(:install) do
         bin.install "ulk"
