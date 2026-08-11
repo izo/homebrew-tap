@@ -5,21 +5,21 @@
 class Ulk < Formula
   desc "ulk — AI-assisted development toolkit for Claude Code"
   homepage "https://github.com/izo/Ulk"
-  version "7.11.0"
+  version "7.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.11.0/ulk_darwin_amd64.tar.gz"
-      sha256 "272a51d9e8bbce635496f8da1152a2ee50df2413aadff26bd8290c88468abdcd"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.13.0/ulk_darwin_amd64.tar.gz"
+      sha256 "fa40cf1aaa5f7fd0610d8d0462b87d499a709be08fa7a0e4c419276b2e1cf484"
 
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.11.0/ulk_darwin_arm64.tar.gz"
-      sha256 "673ffdeb25e7cd835d743d25dd82f59aec1a41d2dc70c0fc1bad5478bbcabc5c"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.13.0/ulk_darwin_arm64.tar.gz"
+      sha256 "cc349cf2f35632c6d0ee8b19024aef1c224dd134afa807f62eb8604ee694d3a0"
 
       define_method(:install) do
         bin.install "ulk"
@@ -29,15 +29,15 @@ class Ulk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.11.0/ulk_linux_amd64.tar.gz"
-      sha256 "8453af556e0e7a9b46b9bbf348b09edd0be298171baad839829b52af099f62b5"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.13.0/ulk_linux_amd64.tar.gz"
+      sha256 "c5772fa938b5b31d5cb21c3526aef98389157f691cd9d87acd7d8489cc7a74ca"
       define_method(:install) do
         bin.install "ulk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.11.0/ulk_linux_arm64.tar.gz"
-      sha256 "f68fe1033730d97ed69ef5851e58a523becb474d3ced3622473abb4dfdba2958"
+      url "https://github.com/izo/homebrew-tap/releases/download/ulk-v7.13.0/ulk_linux_arm64.tar.gz"
+      sha256 "05a57500229339c9098ba4d59c15b804c5d9607d8f3aaf17e768227f28b01ab3"
       define_method(:install) do
         bin.install "ulk"
       end
